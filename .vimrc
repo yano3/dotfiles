@@ -6,6 +6,9 @@ set tabstop=4
 set number
 set ruler
 colorscheme desert
+if v:version >= 700
+    set cursorline
+endif
 
 " search
 set ignorecase
