@@ -1,3 +1,5 @@
+syntax on
+
 " tab
 set expandtab
 set tabstop=4
