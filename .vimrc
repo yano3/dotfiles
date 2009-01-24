@@ -7,6 +7,7 @@ set tabstop=4
 " appearance
 set number
 set ruler
+set laststatus=2
 colorscheme desert
 if v:version >= 700
     set cursorline
