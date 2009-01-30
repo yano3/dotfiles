@@ -30,3 +30,6 @@ set imsearch=0
 " key maps
 nnoremap j gj
 nnoremap k gk
+
+" omni completion
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
