@@ -31,6 +31,9 @@ setopt auto_cd
 # beep
 setopt nobeep
 
+# bindkey
+bindkey "^?" backward-delete-char # for ubuntu linux
+
 # alias
 alias 'll=ls -l'
 alias 'la=ls -lA'
