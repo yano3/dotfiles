@@ -23,6 +23,7 @@ endif
 " search
 set ignorecase
 set smartcase
+set noincsearch
 
 " input method
 set iminsert=0
@@ -31,6 +32,8 @@ set imsearch=0
 " key maps
 nnoremap j gj
 nnoremap k gk
+nnoremap x "_x
+nnoremap <C-h> :<C-u>help<Space>
 
 " omni completion
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
