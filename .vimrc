@@ -1,4 +1,6 @@
 syntax on
+set nobackup
+set nowrap
 
 " tab
 set expandtab
@@ -32,3 +34,12 @@ nnoremap k gk
 
 " omni completion
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+
+" fuzzyfinder.vim
+let g:fuf_modesDisable = [ 'mrucmd', ]
+let g:fuf_patternSeparator = ' '
+let g:fuf_mrufile_maxItem = 500
+let g:fuf_enumeratingLimit = 20
+nnoremap <silent> ;; :FufBuffer<CR>
+nnoremap <silent> ;h :FufMruFile<CR>
+nnoremap <silent> ;f :FufFile<CR>
