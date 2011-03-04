@@ -35,5 +35,5 @@ setopt nobeep
 bindkey "^?" backward-delete-char # for ubuntu linux
 
 # alias
-alias 'll=ls -l'
-alias 'la=ls -lA'
+alias 'll=ls -lGF'
+alias 'la=ls -lAGF'
