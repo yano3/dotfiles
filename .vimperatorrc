@@ -1,0 +1,24 @@
+" browser title
+set titlestring=Firefox
+
+" options
+set guioptions=mTBrnb
+set wildoptions=auto
+set complete=l
+"set noinsertmode
+"set focuscontent
+
+" mappings
+map h gT
+map l gt
+map <Left>  gT
+map <Right> gt
+
+" GoogleReader
+autocmd LocationChange .* js modes.passAllKeys=false
+autocmd LocationChange www\\.google\\.(co\\.jp|com)/reader js modes.passAllKeys=true
+autocmd LocationChange www\\.rememberthemilk\\.com/home js modes.passAllKeys=true
+
+" Abbreviations
+source! ~/_vimperatorrc.local
+
