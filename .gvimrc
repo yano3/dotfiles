@@ -1,7 +1,9 @@
 set lines=48
 set columns=160
 
+set langmenu=C
 set guioptions-=T
+set guioptions-=m
 set showtabline=1
 
 " color
