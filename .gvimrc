@@ -11,3 +11,6 @@ highlight NonText guibg=black
 if has('gui_macvim')
     set transparency=12
 endif
+
+set clipboard=unnamed
+
