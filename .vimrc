@@ -19,6 +19,8 @@ colorscheme desert
 if v:version >= 700
     set cursorline
 endif
+set listchars=tab:>.,trail:_
+set list
 
 " search
 set ignorecase
@@ -46,3 +48,4 @@ let g:fuf_enumeratingLimit = 20
 nnoremap <silent> ;; :FufBuffer<CR>
 nnoremap <silent> ;h :FufMruFile<CR>
 nnoremap <silent> ;f :FufFile<CR>
+
