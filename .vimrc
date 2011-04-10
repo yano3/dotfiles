@@ -14,6 +14,7 @@ set smartindent
 " appearance
 set number
 set ruler
+set showmatch
 set laststatus=2
 colorscheme desert
 if v:version >= 700
