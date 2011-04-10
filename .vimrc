@@ -16,6 +16,7 @@ set number
 set ruler
 set showmatch
 set laststatus=2
+set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'.(&bomb?'[BOM]':'')}%=%l,%c%V%8P
 colorscheme desert
 if v:version >= 700
     set cursorline
