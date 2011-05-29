@@ -2,7 +2,7 @@ syntax on
 set nobackup
 set nowrap
 
-"encodeing
+" encoding
 set encoding=utf-8
 
 " tab
