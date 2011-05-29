@@ -46,8 +46,9 @@ nnoremap k gk
 nnoremap x "_x
 nnoremap <C-h> :<C-u>help<Space>
 
-" omni completion
-autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+" php
+let php_folding=1
+let php_sql_query=1
 
 " fuzzyfinder.vim
 let g:fuf_modesDisable = [ 'mrucmd', ]
