@@ -26,6 +26,7 @@ if v:version >= 700
 endif
 set listchars=tab:>.,trail:_
 set list
+language message C
 
 " search
 set ignorecase
