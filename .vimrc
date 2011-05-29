@@ -37,6 +37,9 @@ set noincsearch
 set iminsert=0
 set imsearch=0
 
+" multi byte
+set ambiwidth=double
+
 " key maps
 nnoremap j gj
 nnoremap k gk
