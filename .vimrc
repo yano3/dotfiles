@@ -2,6 +2,9 @@ syntax on
 set nobackup
 set nowrap
 
+"encodeing
+set encoding=utf-8
+
 " tab
 set expandtab
 set softtabstop=4
