@@ -71,17 +71,6 @@ nmap ;y :YRShow<CR>
 let g:yankring_n_keys = 'Y D'
 "let g:yankring_n_keys = 'Y D x X'
 
-" fuzzyfinder.vim
-let g:fuf_modesDisable = ['mrucmd']
-let g:fuf_patternSeparator = ' '
-let g:fuf_mrufile_maxItem = 5000
-let g:fuf_enumeratingLimit = 20
-let g:fuf_previewHeight = 0
-nnoremap <silent> ;; :FufBuffer<CR>
-nnoremap <silent> ;h :FufMruFile<CR>
-nnoremap <silent> ;f :FufFile<CR>
-nnoremap <silent> ;d :FufFileWithCurrentBufferDir<CR>
-
 " Simple Javascript Indenter
 let g:SimpleJsIndenter_BriefMode = 1
 
