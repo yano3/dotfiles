@@ -71,3 +71,6 @@ let g:SimpleJsIndenter_BriefMode = 1
 call altercmd#load()
 AlterCommand wq w
 
+" smartchr
+inoremap <expr> = smartchr#loop(' = ', ' == ', '=')
+
