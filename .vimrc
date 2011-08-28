@@ -12,6 +12,7 @@ call vundle#rc()
 
 Bundle 'altercmd'
 Bundle 'smartchr'
+Bundle 'YankRing.vim'
 
 filetype plugin indent on
 
