@@ -67,3 +67,7 @@ nnoremap <silent> ;f :FufFile<CR>
 " Simple Javascript Indenter
 let g:SimpleJsIndenter_BriefMode = 1
 
+" altercmd
+call altercmd#load()
+AlterCommand wq w
+
