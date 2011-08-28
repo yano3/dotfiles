@@ -9,6 +9,9 @@ let $PATH = $PATH . ':/opt/local/bin'
 filetype off
 set rtp+=~/.vim/vundle/
 call vundle#rc()
+
+Bundle 'smartchr'
+
 filetype plugin indent on
 
 " encoding
