@@ -50,6 +50,11 @@ nnoremap <C-h> :<C-u>help<Space>
 let php_folding=1
 let php_sql_query=1
 
+" YankRing.vim
+nmap ;y :YRShow<CR>
+let g:yankring_n_keys = 'Y D'
+"let g:yankring_n_keys = 'Y D x X'
+"
 " fuzzyfinder.vim
 let g:fuf_modesDisable = [ 'mrucmd', ]
 let g:fuf_patternSeparator = ' '
