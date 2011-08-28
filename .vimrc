@@ -10,6 +10,7 @@ filetype off
 set rtp+=~/.vim/vundle/
 call vundle#rc()
 
+Bundle 'altercmd'
 Bundle 'smartchr'
 
 filetype plugin indent on
