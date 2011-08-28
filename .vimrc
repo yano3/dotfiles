@@ -1,6 +1,13 @@
+set nocompatible
 syntax on
 set nobackup
 set nowrap
+
+" Vundle
+filetype off
+set rtp+=~/.vim/vundle/
+call vundle#rc()
+filetype plugin indent on
 
 " encoding
 set encoding=utf-8
