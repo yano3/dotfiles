@@ -3,6 +3,8 @@ syntax on
 set nobackup
 set nowrap
 
+let $PATH = $PATH . ':/opt/local/bin'
+
 " Vundle
 filetype off
 set rtp+=~/.vim/vundle/
