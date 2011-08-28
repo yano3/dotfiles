@@ -14,6 +14,7 @@ Bundle 'altercmd'
 Bundle 'Simple-Javascript-Indenter'
 Bundle 'smartchr'
 Bundle 'YankRing.vim'
+Bundle 'unite.vim'
 
 filetype plugin indent on
 
