@@ -64,3 +64,6 @@ nnoremap <silent> ;; :FufBuffer<CR>
 nnoremap <silent> ;h :FufMruFile<CR>
 nnoremap <silent> ;f :FufFile<CR>
 
+" Simple Javascript Indenter
+let g:SimpleJsIndenter_BriefMode = 1
+
