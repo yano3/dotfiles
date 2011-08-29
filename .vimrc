@@ -10,6 +10,7 @@ filetype off
 set rtp+=~/.vim/vundle/
 call vundle#rc()
 
+Bundle 'Align'
 Bundle 'altercmd'
 Bundle 'Simple-Javascript-Indenter'
 Bundle 'smartchr'
