@@ -74,6 +74,7 @@ nnoremap <silent> ;b :Unite buffer<CR>
 nnoremap <silent> ;h :Unite file_mru<CR>
 nnoremap <silent> ;f :Unite file<CR>
 nnoremap <silent> ;d :UniteWithBufferDir file<CR>
+nnoremap <silent> ;o :Unite outline<CR>
 
 " YankRing.vim
 nmap ;y :YRShow<CR>
