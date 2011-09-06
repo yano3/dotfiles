@@ -70,7 +70,7 @@ let php_sql_query=1
 " unite.vim
 let g:unite_winheight = 10
 let g:unite_enable_start_insert = 0
-nnoremap <silent> ;b :Unite buffer<CR>
+nnoremap <silent> ;; :Unite buffer<CR>
 nnoremap <silent> ;h :Unite file_mru<CR>
 nnoremap <silent> ;f :Unite file<CR>
 nnoremap <silent> ;d :UniteWithBufferDir file<CR>
