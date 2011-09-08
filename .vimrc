@@ -16,6 +16,8 @@ Bundle 'Simple-Javascript-Indenter'
 Bundle 'smartchr'
 Bundle 'YankRing.vim'
 Bundle 'unite.vim'
+" github
+Bundle 'h1mesuke/unite-outline'
 
 filetype plugin indent on
 
