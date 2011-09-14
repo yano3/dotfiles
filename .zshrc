@@ -11,7 +11,7 @@ setopt prompt_subst
 PROMPT=$'%{\e[1;32m%}%n@%m%{\e[1;0m%}:%{\e[1;34m%}%~%{\e[1;0m%}%(!.#.$) '
 
 # path
-PATH=$HOME/bin:/opt/local/bin:/opt/local/sbin:$PATH
+PATH=$HOME/bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:$PATH
 export PATH
 
 # history
@@ -37,3 +37,4 @@ bindkey "^?" backward-delete-char # for ubuntu linux
 # alias
 alias 'll=ls -lGF'
 alias 'la=ls -lAGF'
+
