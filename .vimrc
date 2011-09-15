@@ -16,6 +16,7 @@ Bundle 'Simple-Javascript-Indenter'
 Bundle 'smartchr'
 Bundle 'YankRing.vim'
 Bundle 'unite.vim'
+Bundle 'unite-colorscheme'
 " github
 Bundle 'h1mesuke/unite-outline'
 
