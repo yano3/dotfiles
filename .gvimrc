@@ -13,9 +13,9 @@ highlight NonText guibg=black
 highlight Pmenu guibg=DarkCyan
 highlight PmenuSel guibg=DarkBlue
 
-if has('gui_macvim')
-    set transparency=12
-endif
+"if has('gui_macvim')
+"    set transparency=12
+"endif
 
 set clipboard=unnamed
 
