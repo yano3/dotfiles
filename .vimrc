@@ -81,6 +81,10 @@ nnoremap <silent> ;f :Unite file<CR>
 nnoremap <silent> ;d :UniteWithBufferDir file<CR>
 nnoremap <silent> ;o :Unite outline<CR>
 
+" neocomplcache
+let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_smart_case = 1
+
 " YankRing.vim
 nmap ;y :YRShow<CR>
 let g:yankring_n_keys = 'Y D'
