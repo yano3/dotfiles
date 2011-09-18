@@ -17,6 +17,7 @@ Bundle 'smartchr'
 Bundle 'YankRing.vim'
 Bundle 'unite.vim'
 Bundle 'unite-colorscheme'
+Bundle 'neocomplcache'
 " github
 Bundle 'h1mesuke/unite-outline'
 
