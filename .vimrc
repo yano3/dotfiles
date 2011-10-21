@@ -99,5 +99,6 @@ call altercmd#load()
 AlterCommand wq w
 
 " smartchr
-inoremap <expr> = smartchr#loop(' = ', ' == ', '=')
+inoremap <expr> = smartchr#loop('=', '==', '===')
+inoremap <expr> > smartchr#loop('>', '->', '=>')
 
