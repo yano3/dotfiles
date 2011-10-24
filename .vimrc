@@ -18,6 +18,7 @@ Bundle 'YankRing.vim'
 Bundle 'unite.vim'
 Bundle 'unite-colorscheme'
 Bundle 'neocomplcache'
+Bundle 'ack.vim'
 " github
 Bundle 'h1mesuke/unite-outline'
 
