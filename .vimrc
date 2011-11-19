@@ -10,15 +10,16 @@ filetype off
 set rtp+=~/.vim/vundle/
 call vundle#rc()
 
+Bundle 'ack.vim'
 Bundle 'Align'
 Bundle 'altercmd'
+Bundle 'neocomplcache'
+Bundle 'quickrun.vim'
 Bundle 'Simple-Javascript-Indenter'
 Bundle 'smartchr'
-Bundle 'YankRing.vim'
 Bundle 'unite.vim'
 Bundle 'unite-colorscheme'
-Bundle 'neocomplcache'
-Bundle 'ack.vim'
+Bundle 'YankRing.vim'
 " github
 Bundle 'h1mesuke/unite-outline'
 Bundle 'banyan/Nonopaste.vim'
