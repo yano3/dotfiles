@@ -24,6 +24,7 @@ Bundle 'YankRing.vim'
 " github
 Bundle 'banyan/Nonopaste.vim'
 Bundle 'h1mesuke/unite-outline'
+Bundle 'mattn/favstar-vim'
 Bundle 'mattn/hahhah-vim'
 Bundle 'mattn/webapi-vim'
 
