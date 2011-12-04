@@ -25,6 +25,7 @@ Bundle 'YankRing.vim'
 Bundle 'banyan/Nonopaste.vim'
 Bundle 'h1mesuke/unite-outline'
 Bundle 'mattn/hahhah-vim'
+Bundle 'mattn/webapi-vim'
 
 filetype plugin indent on
 
