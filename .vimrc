@@ -23,6 +23,7 @@ Bundle 'unite-colorscheme'
 Bundle 'YankRing.vim'
 " github
 Bundle 'banyan/Nonopaste.vim'
+Bundle 'choplin/unite-vim_hacks'
 Bundle 'h1mesuke/unite-outline'
 Bundle 'mattn/favstar-vim'
 Bundle 'mattn/hahhah-vim'
