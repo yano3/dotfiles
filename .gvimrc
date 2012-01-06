@@ -1,4 +1,3 @@
-set lines=48
 set columns=160
 
 set langmenu=C
