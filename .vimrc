@@ -28,6 +28,7 @@ Bundle 'h1mesuke/unite-outline'
 Bundle 'mattn/favstar-vim'
 Bundle 'mattn/hahhah-vim'
 Bundle 'mattn/webapi-vim'
+Bundle 'Shougo/vimfiler'
 Bundle 'thinca/vim-openbuf'
 
 filetype plugin indent on
