@@ -27,7 +27,6 @@ Bundle 'banyan/Nonopaste.vim'
 Bundle 'choplin/unite-vim_hacks'
 Bundle 'h1mesuke/unite-outline'
 Bundle 'mattn/favstar-vim'
-Bundle 'mattn/hahhah-vim'
 Bundle 'mattn/mkdpreview-vim'
 Bundle 'mattn/webapi-vim'
 Bundle 'plasticboy/vim-markdown'
@@ -53,7 +52,7 @@ set number
 set ruler
 set showmatch
 set laststatus=2
-set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'.(&bomb?'[BOM]':'')}%=%{g:HahHah()}\ %4l,%2c%4P
+set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'.(&bomb?'[BOM]':'')}%=%4l,%2c%4P
 colorscheme desert
 if v:version >= 700
     set cursorline
