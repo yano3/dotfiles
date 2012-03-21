@@ -101,6 +101,7 @@ let g:neocomplcache_enable_smart_case = 1
 nmap ;y :YRShow<CR>
 let g:yankring_n_keys = 'Y D'
 "let g:yankring_n_keys = 'Y D x X'
+let g:yankring_manual_clipboard_check = 0
 
 " Simple Javascript Indenter
 let g:SimpleJsIndenter_BriefMode = 1
