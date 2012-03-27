@@ -78,6 +78,10 @@ nnoremap k gk
 nnoremap x "_x
 nnoremap <C-h> :<C-u>help<Space>
 
+" indent
+autocmd FileType php  setlocal shiftwidth=4 softtabstop=4 expandtab
+autocmd FileType ruby setlocal shiftwidth=2 softtabstop=2 expandtab
+
 " php
 let php_folding=1
 let php_sql_query=1
