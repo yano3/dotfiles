@@ -108,6 +108,12 @@ let g:yankring_n_keys = 'Y D'
 "let g:yankring_n_keys = 'Y D x X'
 let g:yankring_manual_clipboard_check = 0
 
+" memolist.vim
+let g:memolist_path = "~/Dropbox/memolist"
+nnoremap <silent> ;ml :Unite file:<C-r>=g:memolist_path."/"<CR><CR>
+nnoremap <silent> ;mn :MemoNew<CR>
+nnoremap <silent> ;mg :MemoGrep<CR>
+
 " Simple Javascript Indenter
 let g:SimpleJsIndenter_BriefMode = 1
 
