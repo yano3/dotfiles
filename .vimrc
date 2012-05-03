@@ -97,6 +97,7 @@ nnoremap <silent> ;h :Unite file_mru<CR>
 nnoremap <silent> ;f :Unite file<CR>
 nnoremap <silent> ;d :UniteWithBufferDir file<CR>
 nnoremap <silent> ;o :Unite outline<CR>
+nnoremap <silent> ;p :Unite file_rec:!<CR>
 
 " neocomplcache
 let g:neocomplcache_enable_at_startup = 1
