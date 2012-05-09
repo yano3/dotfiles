@@ -11,7 +11,7 @@ setopt prompt_subst
 PROMPT=$'%{\e[1;32m%}%n@%m%{\e[1;0m%}:%{\e[1;34m%}%~%{\e[1;0m%}%(!.#.$) '
 
 # path
-PATH=$HOME/bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:$PATH
+PATH=$HOME/.nodebrew/current/bin:$HOME/bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:$PATH
 export PATH
 export PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
 
