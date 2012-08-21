@@ -7,7 +7,7 @@ autoload -U compinit
 compinit
 
 # prompt
-setopt prompt_subst 
+setopt prompt_subst
 PROMPT=$'%{\e[1;32m%}%n@%m%{\e[1;0m%}:%{\e[1;34m%}%~%{\e[1;0m%}%(!.#.$) '
 
 # path
@@ -39,6 +39,15 @@ bindkey "^?" backward-delete-char # for ubuntu linux
 alias ll='ls -lGF'
 alias la='ls -lAGF'
 alias diff='colordiff'
+
+# vcs_info
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' formats '%F{green}(%s)-[%f%F{red}%b%f%F{green}]%f'
+zstyle ':vcs_info:svn:*' branchformat '%F{red}%b%f%F{green}:r%r%f'
+precmd () {
+    LANG=en_US.UTF-8 vcs_info
+}
+RPROMPT='${vcs_info_msg_0_}'
 
 # misc
 REPORTTIME=3
