@@ -14,6 +14,7 @@ PROMPT=$'%{\e[1;32m%}%n@%m%{\e[1;0m%}:%{\e[1;34m%}%~%{\e[1;0m%}%(!.#.$) '
 PATH=$HOME/.nodebrew/current/bin:$HOME/bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:$PATH
 export PATH
 export PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
+export EDITOR=vim
 
 # history
 HISTFILE=~/.zsh_history
@@ -33,6 +34,7 @@ setopt auto_cd
 setopt nobeep
 
 # bindkey
+bindkey -e
 bindkey "^?" backward-delete-char # for ubuntu linux
 
 # alias
