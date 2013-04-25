@@ -41,6 +41,7 @@ bindkey "^?" backward-delete-char # for ubuntu linux
 alias ll='ls -lGF'
 alias la='ls -lAGF'
 alias diff='colordiff'
+alias g='git'
 
 # vcs_info
 autoload -Uz vcs_info
