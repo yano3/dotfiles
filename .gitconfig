@@ -5,3 +5,9 @@
 	ui = auto
 [core]
 	excludesfile = ~/.gitignore
+[alias]
+	st = status
+	di = diff
+	dc = diff --cached
+	co = checkout
+	br = branch
