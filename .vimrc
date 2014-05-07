@@ -23,6 +23,7 @@ Bundle 'sudo.vim'
 Bundle 'unite-colorscheme'
 Bundle 'YankRing.vim'
 " github
+Bundle 'AndrewRadev/switch.vim'
 Bundle 'banyan/Nonopaste.vim'
 Bundle 'choplin/unite-vim_hacks'
 Bundle 'glidenote/memolist.vim'
@@ -127,6 +128,9 @@ AlterCommand wq w
 " smartchr
 inoremap <expr> = smartchr#loop(' = ', ' == ', ' === ', '=')
 inoremap <expr> > smartchr#loop('>', '->', ' => ', '=>')
+
+" switch.vim
+nnoremap <silent> <Leader>t :<C-u>Switch<CR>
 
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
