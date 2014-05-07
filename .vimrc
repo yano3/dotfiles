@@ -2,6 +2,7 @@ set nocompatible
 syntax on
 set nobackup
 set nowrap
+set noundofile
 
 let $PATH = $PATH . ':/opt/local/bin'
 
