@@ -36,6 +36,7 @@ Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/unite.vim'
 Bundle 'Shougo/vimfiler'
 Bundle 'thinca/vim-openbuf'
+Bundle 'vim-scripts/vim-auto-save'
 
 filetype plugin indent on
 
@@ -90,6 +91,9 @@ autocmd FileType ruby setlocal shiftwidth=2 softtabstop=2 expandtab
 " php
 let php_folding=1
 let php_sql_query=1
+
+" vim-auto-save
+let g:auto_save = 1
 
 " unite.vim
 let g:unite_winheight = 10
