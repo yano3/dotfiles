@@ -1,6 +1,7 @@
 set nocompatible
 syntax on
 set nobackup
+set noswapfile
 set nowrap
 set noundofile
 
