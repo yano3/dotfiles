@@ -11,3 +11,5 @@
 	dc = diff --cached
 	co = checkout
 	br = branch
+[ghq]
+	root = ~/src
