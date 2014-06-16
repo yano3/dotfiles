@@ -15,6 +15,7 @@ PATH=$HOME/.nodebrew/current/bin:$HOME/bin:/usr/local/bin:/opt/local/bin:/opt/lo
 export PATH
 export PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
 export EDITOR=vim
+export GOPATH=$HOME
 
 # history
 HISTFILE=~/.zsh_history
