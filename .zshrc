@@ -55,3 +55,5 @@ RPROMPT='${vcs_info_msg_0_}'
 # misc
 REPORTTIME=3
 
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
