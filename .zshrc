@@ -2,6 +2,9 @@
 LANG=ja_JP.UTF-8
 export LANG
 
+# disable stty stop
+stty stop undef
+
 # auto completion
 autoload -U compinit
 compinit
