@@ -61,3 +61,18 @@ REPORTTIME=3
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+# peco
+function peco-src () {
+    local selected_dir=$(ghq list --full-path | peco --query "$LBUFFER")
+    if [ -n "$selected_dir" ]; then
+        BUFFER="cd ${selected_dir}"
+        zle accept-line
+    fi
+    zle clear-screen
+}
+zle -N peco-src
+
+if [[ -f `command -v peco` ]]; then
+    bindkey '^S' peco-src
+fi
+
