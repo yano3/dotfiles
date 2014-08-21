@@ -47,14 +47,18 @@ alias la='ls -lAGF'
 alias diff='colordiff'
 alias g='git'
 
+
 # vcs_info
-autoload -Uz vcs_info
-zstyle ':vcs_info:*' formats '%F{green}(%s)-[%f%F{red}%b%f%F{green}]%f'
-zstyle ':vcs_info:svn:*' branchformat '%F{red}%b%f%F{green}:r%r%f'
-precmd () {
-    LANG=en_US.UTF-8 vcs_info
-}
-RPROMPT='${vcs_info_msg_0_}'
+autoload -Uz is-at-least
+if is-at-least 4.3.10; then
+    autoload -Uz vcs_info
+    zstyle ':vcs_info:*' formats '%F{green}(%s)-[%f%F{red}%b%f%F{green}]%f'
+    zstyle ':vcs_info:svn:*' branchformat '%F{red}%b%f%F{green}:r%r%f'
+    precmd () {
+        LANG=en_US.UTF-8 vcs_info
+    }
+    RPROMPT='${vcs_info_msg_0_}'
+fi
 
 # misc
 REPORTTIME=3
