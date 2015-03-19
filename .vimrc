@@ -99,6 +99,7 @@ let g:ctrlp_match_window = 'bottom,order:btt,min:2,max:10,results:100'
 nnoremap <silent> ;; <C-u>:CtrlPBuffer<CR>
 nnoremap <silent> ;h <C-u>:CtrlPMRUFiles<CR>
 nnoremap <silent> ;f <C-u>:CtrlP<CR>
+nnoremap <silent> ;d <C-u>:CtrlP %:h<CR>
 nnoremap <silent> ;l <C-u>:CtrlPLine<CR>
 
 " neocomplcache
