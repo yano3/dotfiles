@@ -22,19 +22,16 @@ Bundle 'quickrun.vim'
 Bundle 'Simple-Javascript-Indenter'
 Bundle 'smartchr'
 Bundle 'sudo.vim'
-Bundle 'unite-colorscheme'
 Bundle 'YankRing.vim'
 " github
 Bundle 'AndrewRadev/switch.vim'
 Bundle 'banyan/Nonopaste.vim'
-Bundle 'choplin/unite-vim_hacks'
+Bundle 'ctrlpvim/ctrlp.vim'
 Bundle 'glidenote/memolist.vim'
-Bundle 'h1mesuke/unite-outline'
 Bundle 'mattn/favstar-vim'
 Bundle 'mattn/webapi-vim'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/neomru.vim'
-Bundle 'Shougo/unite.vim'
 Bundle 'Shougo/vimfiler'
 Bundle 'thinca/vim-openbuf'
 Bundle 'vim-scripts/vim-auto-save'
@@ -97,16 +94,13 @@ let php_sql_query=1
 " vim-auto-save
 let g:auto_save = 1
 
-" unite.vim
-let g:unite_winheight = 10
-let g:unite_enable_start_insert = 0
-let g:unite_split_rule = 'botright'
-nnoremap <silent> ;; :Unite buffer<CR>
-nnoremap <silent> ;h :Unite file_mru<CR>
-nnoremap <silent> ;f :Unite file<CR>
-nnoremap <silent> ;d :UniteWithBufferDir file<CR>
-nnoremap <silent> ;o :Unite outline<CR>
-nnoremap <silent> ;p :Unite file_rec:!<CR>
+" ctrlp
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_match_window = 'bottom,order:btt,min:2,max:10,results:100'
+nnoremap <silent> ;; <C-u>:CtrlPBuffer<CR>
+nnoremap <silent> ;h <C-u>:CtrlPMRUFiles<CR>
+nnoremap <silent> ;f <C-u>:CtrlP<CR>
+nnoremap <silent> ;l <C-u>:CtrlPLine<CR>
 
 " neocomplcache
 let g:neocomplcache_enable_at_startup = 1
@@ -120,7 +114,7 @@ let g:yankring_manual_clipboard_check = 0
 
 " memolist.vim
 let g:memolist_path = "~/Dropbox/memolist"
-nnoremap <silent> ;ml :Unite file:<C-r>=g:memolist_path."/"<CR><CR>
+nnoremap <silent> ;ml :exe "CtrlP" g:memolist_path<CR><F5>
 nnoremap <silent> ;mn :MemoNew<CR>
 nnoremap <silent> ;mg :MemoGrep<CR>
 
