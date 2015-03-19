@@ -103,6 +103,7 @@ nnoremap <silent> ;f :<C-u>CtrlP<CR>
 nnoremap <silent> ;d :<C-u>CtrlP %:h<CR>
 nnoremap <silent> ;l :<C-u>CtrlPLine<CR>
 nnoremap <silent> ;g :<C-u>CtrlPGhq<CR>
+nnoremap <silent> ;c :<C-u>CtrlP pwd<CR>
 
 " neocomplcache
 let g:neocomplcache_enable_at_startup = 1
