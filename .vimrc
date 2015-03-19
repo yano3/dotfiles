@@ -5,7 +5,7 @@ set noswapfile
 set nowrap
 set noundofile
 
-let $PATH = $PATH . ':/opt/local/bin'
+let $PATH = $PATH . ':/opt/local/bin:expand("~")/bin/'
 
 " Vundle
 filetype off
@@ -28,6 +28,7 @@ Bundle 'AndrewRadev/switch.vim'
 Bundle 'banyan/Nonopaste.vim'
 Bundle 'ctrlpvim/ctrlp.vim'
 Bundle 'glidenote/memolist.vim'
+Bundle 'mattn/ctrlp-ghq'
 Bundle 'mattn/favstar-vim'
 Bundle 'mattn/webapi-vim'
 Bundle 'Shougo/neocomplcache'
@@ -101,6 +102,7 @@ nnoremap <silent> ;h :<C-u>CtrlPMRUFiles<CR>
 nnoremap <silent> ;f :<C-u>CtrlP<CR>
 nnoremap <silent> ;d :<C-u>CtrlP %:h<CR>
 nnoremap <silent> ;l :<C-u>CtrlPLine<CR>
+nnoremap <silent> ;g :<C-u>CtrlPGhq<CR>
 
 " neocomplcache
 let g:neocomplcache_enable_at_startup = 1
