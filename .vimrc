@@ -32,7 +32,6 @@ Bundle 'mattn/ctrlp-ghq'
 Bundle 'mattn/favstar-vim'
 Bundle 'mattn/webapi-vim'
 Bundle 'Shougo/neocomplcache'
-Bundle 'Shougo/vimfiler'
 Bundle 'thinca/vim-openbuf'
 Bundle 'vim-scripts/vim-auto-save'
 
