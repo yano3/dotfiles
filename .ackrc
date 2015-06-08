@@ -1,2 +1,3 @@
 --color
 --group
+--ignore-file=ext:phar
