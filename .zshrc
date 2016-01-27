@@ -85,3 +85,6 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 # direnv
 eval "$(direnv hook zsh)"
+
+# Docker Toolbox
+eval $(docker-machine env default)
