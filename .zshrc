@@ -82,3 +82,6 @@ fi
 
 # pyenv
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
+# direnv
+eval "$(direnv hook zsh)"
