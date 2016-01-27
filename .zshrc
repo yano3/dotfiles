@@ -80,3 +80,5 @@ if [[ -f `command -v peco` ]]; then
     bindkey '^S' peco-src
 fi
 
+# pyenv
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
