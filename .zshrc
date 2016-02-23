@@ -47,6 +47,7 @@ alias la='ls -lAGF'
 alias diff='colordiff'
 alias g='git'
 alias be='bundle exec'
+alias v='vagrant'
 
 # vcs_info
 autoload -Uz is-at-least
