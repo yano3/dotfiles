@@ -48,6 +48,9 @@ set shiftwidth=4
 " indent
 set autoindent
 set smartindent
+if v:version >= 800
+    set breakindent
+endif
 
 " appearance
 set number
