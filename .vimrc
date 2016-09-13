@@ -59,9 +59,7 @@ set showmatch
 set laststatus=2
 set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'.(&bomb?'[BOM]':'')}%=%4l,%2c%4P
 colorscheme desert
-if v:version >= 700
-    set cursorline
-endif
+set cursorline
 set listchars=tab:>.,trail:_
 set list
 language message C
