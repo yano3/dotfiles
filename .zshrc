@@ -48,6 +48,7 @@ alias diff='colordiff'
 alias g='git'
 alias be='bundle exec'
 alias v='vagrant'
+alias d='docker'
 
 # vcs_info
 autoload -Uz is-at-least
