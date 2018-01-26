@@ -92,3 +92,10 @@ eval "$(direnv hook zsh)"
 
 # perlbrew
 source ~/perl5/perlbrew/etc/bashrc
+
+# phpenv
+export PHPENV_ROOT="$HOME/.phpenv"
+if [ -d "${PHPENV_ROOT}" ]; then
+  export PATH="${PHPENV_ROOT}/bin:${PATH}"
+  eval "$(phpenv init -)"
+fi
