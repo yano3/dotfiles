@@ -44,7 +44,9 @@ bindkey "^?" backward-delete-char # for ubuntu linux
 # alias
 alias ll='ls -lGF'
 alias la='ls -lAGF'
-alias diff='colordiff'
+if [[ -f `command -v colordiff` ]]; then
+  alias diff='colordiff'
+fi
 alias g='git'
 alias be='bundle exec'
 alias v='vagrant'
