@@ -13,3 +13,5 @@
 	br = branch
 [ghq]
 	root = ~/src
+[github]
+	user = yano3
