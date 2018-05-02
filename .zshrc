@@ -19,6 +19,7 @@ export PATH
 export PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
 export EDITOR=vim
 export GOPATH=$HOME
+export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 
 # history
 HISTFILE=~/.zsh_history
