@@ -67,6 +67,11 @@ fi
 # misc
 REPORTTIME=3
 
+# source private.zsh
+if [ -f ~/.zsh.d/private.zsh ]; then
+  source ~/.zsh.d/private.zsh
+fi
+
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # peco
