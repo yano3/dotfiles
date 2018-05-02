@@ -72,6 +72,7 @@ if [ -f ~/.zsh.d/private.zsh ]; then
   source ~/.zsh.d/private.zsh
 fi
 
+# rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # peco
