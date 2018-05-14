@@ -52,6 +52,7 @@ alias g='git'
 alias be='bundle exec'
 alias v='vagrant'
 alias d='docker'
+alias tf='terraform'
 
 # vcs_info
 autoload -Uz is-at-least
