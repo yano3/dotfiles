@@ -11,6 +11,8 @@
 	dc = diff --cached
 	co = checkout
 	br = branch
+[fetch]
+	prune = true
 [ghq]
 	root = ~/src
 [github]
