@@ -79,7 +79,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # peco
 function peco-src () {
-    local selected_dir=$(ghq list --full-path | peco --initial-filter Fuzzy --query "$LBUFFER")
+    local selected_dir=$(ghq list --full-path | peco --initial-filter SmartCase --query "$LBUFFER")
     if [ -n "$selected_dir" ]; then
         BUFFER="cd ${selected_dir}"
         zle accept-line
