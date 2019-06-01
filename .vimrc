@@ -64,6 +64,10 @@ set listchars=tab:>.,trail:_
 set list
 language message C
 
+" bells
+set visualbell t_vb=
+set noerrorbells
+
 " search
 set ignorecase
 set smartcase
