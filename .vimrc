@@ -72,6 +72,7 @@ set noerrorbells
 set ignorecase
 set smartcase
 set noincsearch
+set hlsearch
 
 " input method
 set iminsert=0
