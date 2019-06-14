@@ -53,6 +53,7 @@ alias be='bundle exec'
 alias v='vagrant'
 alias d='docker'
 alias tf='terraform'
+alias ack='rg'
 
 # vcs_info
 autoload -Uz is-at-least
