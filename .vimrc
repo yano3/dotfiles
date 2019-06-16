@@ -27,6 +27,7 @@ Plugin 'YankRing.vim'
 Plugin 'AndrewRadev/switch.vim'
 Plugin 'banyan/Nonopaste.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'fatih/vim-go'
 Plugin 'glidenote/memolist.vim'
 Plugin 'mattn/ctrlp-ghq'
 Plugin 'mattn/favstar-vim'
@@ -98,6 +99,7 @@ let php_sql_query=1
 
 " vim-auto-save
 let g:auto_save = 1
+let g:auto_save_in_insert_mode = 0
 
 " ctrlp
 let g:ctrlp_working_path_mode = 'ra'
