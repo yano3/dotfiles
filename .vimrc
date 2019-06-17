@@ -24,7 +24,6 @@ Plugin 'smartchr'
 Plugin 'sudo.vim'
 Plugin 'YankRing.vim'
 " github
-Plugin 'AndrewRadev/switch.vim'
 Plugin 'banyan/Nonopaste.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'fatih/vim-go'
@@ -137,9 +136,6 @@ AlterCommand wq w
 " smartchr
 inoremap <expr> = smartchr#loop(' = ', ' == ', ' === ', ' := ', '=')
 inoremap <expr> > smartchr#loop('>', '->', ' => ', '=>')
-
-" switch.vim
-nnoremap <silent> <Leader>t :<C-u>Switch<CR>
 
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
