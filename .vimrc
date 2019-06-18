@@ -87,9 +87,10 @@ nnoremap x "_x
 nnoremap <C-h> :<C-u>help<Space>
 
 " indent
-autocmd FileType php  setlocal shiftwidth=4 softtabstop=4 expandtab
-autocmd FileType ruby setlocal shiftwidth=2 softtabstop=2 expandtab
-autocmd FileType go   setlocal shiftwidth=4 softtabstop=4 tabstop=4 noexpandtab
+autocmd FileType php    setlocal shiftwidth=4 softtabstop=4 expandtab
+autocmd FileType puppet setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType ruby   setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType go     setlocal shiftwidth=4 softtabstop=4 tabstop=4 noexpandtab
 
 " php
 let php_folding=1
