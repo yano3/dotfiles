@@ -5,6 +5,9 @@ set guioptions-=T
 set guioptions-=m
 set showtabline=1
 
+" environment variables
+let $GOPATH = $HOME
+
 " color
 colorscheme desert
 highlight Normal guibg=black
