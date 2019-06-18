@@ -29,8 +29,9 @@ Plugin 'fatih/vim-go'
 Plugin 'glidenote/memolist.vim'
 Plugin 'mattn/ctrlp-ghq'
 Plugin 'mattn/webapi-vim'
+Plugin 'prabirshrestha/asyncomplete.vim'
+Plugin 'prabirshrestha/asyncomplete-buffer.vim'
 Plugin 'puppetlabs/puppet-syntax-vim'
-Plugin 'Shougo/neocomplcache'
 Plugin 'thinca/vim-openbuf'
 Plugin 'vim-scripts/vim-auto-save'
 
@@ -111,9 +112,16 @@ nnoremap <silent> ;l :<C-u>CtrlPLine<CR>
 nnoremap <silent> ;g :<C-u>CtrlPGhq<CR>
 nnoremap <silent> ;c :<C-u>CtrlP pwd<CR>
 
-" neocomplcache
-let g:neocomplcache_enable_at_startup = 1
-let g:neocomplcache_enable_smart_case = 1
+" asyncomplete
+call asyncomplete#register_source(asyncomplete#sources#buffer#get_source_options({
+    \ 'name': 'buffer',
+    \ 'whitelist': ['*'],
+    \ 'blacklist': ['go'],
+    \ 'completor': function('asyncomplete#sources#buffer#completor'),
+    \ 'config': {
+    \    'max_buffer_size': 5000000,
+    \  },
+    \ }))
 
 " YankRing.vim
 nmap ;y :YRShow<CR>
