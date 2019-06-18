@@ -23,7 +23,6 @@ Plugin 'smartchr'
 Plugin 'sudo.vim'
 Plugin 'YankRing.vim'
 " github
-Plugin 'banyan/Nonopaste.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'fatih/vim-go'
 Plugin 'glidenote/memolist.vim'
