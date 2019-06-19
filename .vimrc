@@ -86,6 +86,7 @@ nnoremap j gj
 nnoremap k gk
 nnoremap x "_x
 nnoremap <C-h> :<C-u>help<Space>
+nnoremap <ESC><ESC> :nohlsearch<CR>
 
 " indent
 autocmd FileType php    setlocal shiftwidth=4 softtabstop=4 expandtab
