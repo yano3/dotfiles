@@ -33,6 +33,7 @@ Plugin 'prabirshrestha/asyncomplete-buffer.vim'
 Plugin 'puppetlabs/puppet-syntax-vim'
 Plugin 'thinca/vim-openbuf'
 Plugin 'vim-scripts/vim-auto-save'
+Plugin 'yami-beta/asyncomplete-omni.vim'
 
 filetype plugin indent on
 
@@ -121,6 +122,13 @@ call asyncomplete#register_source(asyncomplete#sources#buffer#get_source_options
     \    'max_buffer_size': 5000000,
     \  },
     \ }))
+
+call asyncomplete#register_source(asyncomplete#sources#omni#get_source_options({
+\ 'name': 'omni',
+\ 'whitelist': ['go'],
+\ 'blacklist': [],
+\ 'completor': function('asyncomplete#sources#omni#completor')
+\  }))
 
 " YankRing.vim
 nmap ;y :YRShow<CR>
