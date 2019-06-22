@@ -12,7 +12,6 @@ filetype off
 set rtp+=~/.vim/vundle/
 call vundle#rc()
 
-Plugin 'ack.vim'
 Plugin 'Align'
 Plugin 'altercmd'
 Plugin 'Gist.vim'
