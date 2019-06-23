@@ -89,8 +89,16 @@ function peco-src () {
 }
 zle -N peco-src
 
+function peco-select-history() {
+    BUFFER=$(fc -l -r -n 1 | peco --query "$LBUFFER")
+    CURSOR=$#BUFFER
+    zle redisplay
+}
+zle -N peco-select-history
+
 if [[ -f `command -v peco` ]]; then
     bindkey '^S' peco-src
+    bindkey '^r' peco-select-history
 fi
 
 # pyenv
