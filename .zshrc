@@ -53,6 +53,7 @@ alias g='git'
 alias be='bundle exec'
 alias v='vagrant'
 alias d='docker'
+alias k='kubectl'
 alias tf='terraform'
 alias ack='rg'
 
