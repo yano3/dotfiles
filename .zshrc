@@ -49,13 +49,14 @@ alias la='ls -lAGF'
 if [[ -f `command -v colordiff` ]]; then
   alias diff='colordiff'
 fi
-alias g='git'
+
+alias ack='rg'
 alias be='bundle exec'
-alias v='vagrant'
 alias d='docker'
+alias g='git'
 alias k='kubectl'
 alias tf='terraform'
-alias ack='rg'
+alias v='vagrant'
 
 # vcs_info
 autoload -Uz is-at-least
