@@ -25,6 +25,7 @@ Plugin 'YankRing.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'fatih/vim-go'
 Plugin 'glidenote/memolist.vim'
+Plugin 'itchyny/lightline.vim'
 Plugin 'mattn/ctrlp-ghq'
 Plugin 'mattn/webapi-vim'
 Plugin 'prabirshrestha/asyncomplete.vim'
@@ -56,7 +57,6 @@ set number
 set ruler
 set showmatch
 set laststatus=2
-set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'.(&bomb?'[BOM]':'')}%=%4l,%2c%4P
 colorscheme desert
 set cursorline
 set listchars=tab:>.,trail:_
