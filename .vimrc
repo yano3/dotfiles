@@ -23,17 +23,18 @@ Plugin 'sudo.vim'
 Plugin 'YankRing.vim'
 " github
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'fatih/vim-go'
 Plugin 'glidenote/memolist.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'mattn/ctrlp-ghq'
 Plugin 'mattn/webapi-vim'
+Plugin 'prabirshrestha/async.vim'
 Plugin 'prabirshrestha/asyncomplete.vim'
 Plugin 'prabirshrestha/asyncomplete-buffer.vim'
+Plugin 'prabirshrestha/asyncomplete-lsp.vim'
+Plugin 'prabirshrestha/vim-lsp'
 Plugin 'puppetlabs/puppet-syntax-vim'
 Plugin 'thinca/vim-openbuf'
 Plugin 'vim-scripts/vim-auto-save'
-Plugin 'yami-beta/asyncomplete-omni.vim'
 
 filetype plugin indent on
 
@@ -112,6 +113,17 @@ nnoremap <silent> ;l :<C-u>CtrlPLine<CR>
 nnoremap <silent> ;g :<C-u>CtrlPGhq<CR>
 nnoremap <silent> ;c :<C-u>CtrlP pwd<CR>
 
+" vim-lsp
+if executable('gopls')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'gopls',
+        \ 'cmd': {server_info->['gopls', '-mode', 'stdio']},
+        \ 'whitelist': ['go'],
+        \ })
+    autocmd BufWritePre *.go LspDocumentFormatSync
+endif
+let g:lsp_signs_enabled = 0
+
 " asyncomplete
 call asyncomplete#register_source(asyncomplete#sources#buffer#get_source_options({
     \ 'name': 'buffer',
@@ -122,13 +134,6 @@ call asyncomplete#register_source(asyncomplete#sources#buffer#get_source_options
     \    'max_buffer_size': 5000000,
     \  },
     \ }))
-
-call asyncomplete#register_source(asyncomplete#sources#omni#get_source_options({
-\ 'name': 'omni',
-\ 'whitelist': ['go'],
-\ 'blacklist': [],
-\ 'completor': function('asyncomplete#sources#omni#completor')
-\  }))
 
 " YankRing.vim
 nmap ;y :YRShow<CR>
