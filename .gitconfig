@@ -11,6 +11,7 @@
 	dc = diff --cached
 	co = checkout
 	br = branch
+	sw = switch
 [fetch]
 	prune = true
 [ghq]
