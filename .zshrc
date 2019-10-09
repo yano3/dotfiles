@@ -53,6 +53,7 @@ fi
 alias ack='rg'
 alias be='bundle exec'
 alias d='docker'
+alias doco='docker-compose'
 alias g='git'
 alias k='kubectl'
 alias tf='terraform'
