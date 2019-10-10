@@ -11,7 +11,6 @@ compinit
 
 # prompt
 setopt prompt_subst
-PROMPT=$'%{\e[1;32m%}%n@%m%{\e[1;0m%}:%{\e[1;35m%}%~%{\e[1;0m%}%(!.#.$) '
 
 # path
 PATH=$HOME/.nodebrew/current/bin:$HOME/bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:$PATH
@@ -59,24 +58,17 @@ alias k='kubectl'
 alias tf='terraform'
 alias v='vagrant'
 
-# vcs_info
-autoload -Uz is-at-least
-if is-at-least 4.3.10; then
-    autoload -Uz vcs_info
-    zstyle ':vcs_info:*' formats '%F{green}(%s)-[%f%F{red}%b%f%F{green}]%f'
-    zstyle ':vcs_info:svn:*' branchformat '%F{red}%b%f%F{green}:r%r%f'
-    precmd () {
-        LANG=en_US.UTF-8 vcs_info
-    }
-    RPROMPT='${vcs_info_msg_0_}'
-fi
-
 # misc
 REPORTTIME=3
 
 # source private.zsh
 if [ -f ~/.zsh.d/private.zsh ]; then
   source ~/.zsh.d/private.zsh
+fi
+
+# starship
+if [[ -f `command -v starship` ]]; then
+    eval "$(starship init zsh)"
 fi
 
 # rbenv
