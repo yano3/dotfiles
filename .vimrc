@@ -22,6 +22,7 @@ Plugin 'smartchr'
 Plugin 'sudo.vim'
 Plugin 'YankRing.vim'
 " github
+Plugin 'arcticicestudio/nord-vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'glidenote/memolist.vim'
 Plugin 'itchyny/lightline.vim'
@@ -58,7 +59,7 @@ set number
 set ruler
 set showmatch
 set laststatus=2
-colorscheme desert
+colorscheme nord
 set cursorline
 set listchars=tab:>.,trail:_
 set list

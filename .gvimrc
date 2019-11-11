@@ -9,7 +9,7 @@ set showtabline=1
 let $GOPATH = $HOME
 
 " color
-colorscheme desert
+colorscheme nord
 highlight Normal guibg=black
 highlight NonText guibg=black
 highlight Pmenu guibg=DarkCyan
