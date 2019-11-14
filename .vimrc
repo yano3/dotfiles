@@ -104,6 +104,11 @@ autocmd FileType go     setlocal shiftwidth=4 softtabstop=4 tabstop=4 noexpandta
 let php_folding=1
 let php_sql_query=1
 
+" lightline.vim
+let g:lightline = {
+      \ 'colorscheme': 'nord',
+      \ }
+
 " vim-auto-save
 let g:auto_save = 1
 let g:auto_save_in_insert_mode = 0
