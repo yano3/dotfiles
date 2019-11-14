@@ -8,13 +8,6 @@ set showtabline=1
 " environment variables
 let $GOPATH = $HOME
 
-" color
-colorscheme nord
-highlight Normal guibg=black
-highlight NonText guibg=black
-highlight Pmenu guibg=DarkCyan
-highlight PmenuSel guibg=DarkBlue
-
 "if has('gui_macvim')
 "    set transparency=12
 "endif
