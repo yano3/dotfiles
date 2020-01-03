@@ -65,6 +65,7 @@ colorscheme nord
 set cursorline
 set listchars=tab:>.,trail:_
 set list
+set signcolumn=yes
 language message C
 
 " true color in terminal
