@@ -27,6 +27,8 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'glidenote/memolist.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'mattn/ctrlp-ghq'
+Plugin 'mattn/vim-lsp-icons'
+Plugin 'mattn/vim-lsp-settings'
 Plugin 'mattn/webapi-vim'
 Plugin 'prabirshrestha/async.vim'
 Plugin 'prabirshrestha/asyncomplete.vim'
@@ -124,17 +126,6 @@ nnoremap <silent> ;d :<C-u>CtrlP %:h<CR>
 nnoremap <silent> ;l :<C-u>CtrlPLine<CR>
 nnoremap <silent> ;g :<C-u>CtrlPGhq<CR>
 nnoremap <silent> ;c :<C-u>CtrlP pwd<CR>
-
-" vim-lsp
-if executable('gopls')
-    au User lsp_setup call lsp#register_server({
-        \ 'name': 'gopls',
-        \ 'cmd': {server_info->['gopls', '-mode', 'stdio']},
-        \ 'whitelist': ['go'],
-        \ })
-    autocmd BufWritePre *.go LspDocumentFormatSync
-endif
-let g:lsp_signs_enabled = 0
 
 " asyncomplete
 call asyncomplete#register_source(asyncomplete#sources#buffer#get_source_options({
