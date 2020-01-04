@@ -5,8 +5,6 @@ set noswapfile
 set nowrap
 set noundofile
 
-let $PATH = $PATH . ':/opt/local/bin:' . expand("~") . '/bin'
-
 " Vundle
 filetype off
 set rtp+=~/.vim/vundle/
