@@ -103,9 +103,6 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 # direnv
 eval "$(direnv hook zsh)"
 
-# perlbrew
-source ~/perl5/perlbrew/etc/bashrc
-
 # phpenv
 export PHPENV_ROOT="$HOME/.phpenv"
 if [ -d "${PHPENV_ROOT}" ]; then
