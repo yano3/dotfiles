@@ -18,3 +18,5 @@
 	root = ~/src
 [github]
 	user = yano3
+[pull]
+	ff = only
