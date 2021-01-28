@@ -41,6 +41,7 @@ filetype plugin indent on
 
 " encoding
 set encoding=utf-8
+set fileencodings=utf-8,euc-jp
 
 " tab
 set expandtab
