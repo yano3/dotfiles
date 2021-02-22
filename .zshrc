@@ -66,6 +66,11 @@ if [ -f ~/.zsh.d/private.zsh ]; then
   source ~/.zsh.d/private.zsh
 fi
 
+# source local.zsh
+if [ -f ~/.zsh.d/local.zsh ]; then
+  source ~/.zsh.d/local.zsh
+fi
+
 # starship
 if [[ -f `command -v starship` ]]; then
     eval "$(starship init zsh)"
