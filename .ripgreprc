@@ -1,0 +1,6 @@
+# include hidden files like dotfiles
+--hidden
+
+# exclude .git directory
+--glob
+!.git/*

@@ -76,6 +76,9 @@ if [[ -f `command -v starship` ]]; then
     eval "$(starship init zsh)"
 fi
 
+# ripgrep
+export RIPGREP_CONFIG_PATH=~/.ripgreprc
+
 # rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
