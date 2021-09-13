@@ -15,7 +15,6 @@ setopt prompt_subst
 # path
 PATH=$HOME/.nodebrew/current/bin:$HOME/bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:$PATH
 export PATH
-export PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
 export EDITOR=vim
 export GOPATH=$HOME
 export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
