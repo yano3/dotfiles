@@ -104,9 +104,6 @@ if [[ -f `command -v peco` ]]; then
     bindkey '^r' peco-select-history
 fi
 
-# pyenv
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-
 # direnv
 eval "$(direnv hook zsh)"
 
