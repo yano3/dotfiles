@@ -29,6 +29,7 @@ Plugin 'mattn/ctrlp-ghq'
 Plugin 'mattn/vim-lsp-icons'
 Plugin 'mattn/vim-lsp-settings'
 Plugin 'mattn/webapi-vim'
+Plugin 'osyo-manga/vim-anzu'
 Plugin 'prabirshrestha/async.vim'
 Plugin 'prabirshrestha/asyncomplete.vim'
 Plugin 'prabirshrestha/asyncomplete-buffer.vim'
@@ -161,6 +162,13 @@ AlterCommand wq w
 " smartchr
 inoremap <expr> = smartchr#loop('=', ' = ', ' := ', ' == ', ' === ')
 inoremap <expr> > smartchr#loop('>', '->', ' => ', '=>')
+
+" vim-anzu
+nmap n <Plug>(anzu-n-with-echo)
+nmap N <Plug>(anzu-N-with-echo)
+nmap * <Plug>(anzu-star-with-echo)
+nmap # <Plug>(anzu-sharp-with-echo)
+nmap <Esc><Esc> <Plug>(anzu-clear-search-status)
 
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
