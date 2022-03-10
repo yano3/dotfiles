@@ -7,7 +7,7 @@ set noundofile
 
 " Vundle
 filetype off
-set rtp+=~/.vim/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 
 Plugin 'Align'
@@ -38,6 +38,7 @@ Plugin 'prabirshrestha/vim-lsp'
 Plugin 'puppetlabs/puppet-syntax-vim'
 Plugin 'thinca/vim-openbuf'
 Plugin 'vim-scripts/vim-auto-save'
+Plugin 'VundleVim/Vundle.vim'
 
 filetype plugin indent on
 
