@@ -60,6 +60,7 @@ endif
 " appearance
 set number
 set ruler
+set shortmess-=S
 set showmatch
 set laststatus=2
 colorscheme nord
